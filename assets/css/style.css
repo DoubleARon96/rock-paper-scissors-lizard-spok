@@ -1,7 +1,13 @@
 *{
     text-align: center;
 }
+#main-game{
+    width: 80%;
+    height: 400px;
+    border: 1px solid black;
+}
 .player-input{
     display: inline-block;
     width: 80%;
+    border: 1px solid black;
 }
