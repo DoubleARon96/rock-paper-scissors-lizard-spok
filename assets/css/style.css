@@ -1,3 +1,7 @@
 *{
     text-align: center;
 }
+.player-input{
+    display: inline-block;
+    width: 80%;
+}
