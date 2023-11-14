@@ -11,3 +11,24 @@
     width: 80%;
     border: 1px solid black;
 }
+#main-pictures ,#picture1, #picture2{
+    display: inline;
+    width: 40%;
+    background-color: black;
+    border-radius: 360px;
+}
+#player-score ,#player-wins, #player-losses{
+    display: inline;
+}
+.rules{
+    list-style-type:none;
+    display:flex;
+    justify-content: space-between;
+    column-count: 2;
+    text-transform: capitalize;
+}
+.rules>li{
+    padding: 10px;
+    border-radius: 80px;
+    border: 1px solid black;
+}
