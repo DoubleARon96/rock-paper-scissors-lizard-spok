@@ -1,37 +1,27 @@
 console.log("hi just checking if it works");
-let playerChoice = document.getElementsByClassName("buttonChoice").button ;
-let rock = document.getElementById("rock");
-let scissors = document.getElementById("scissors");
-let lizard = document.getElementById("lizard");
-let spock = document.getElementById("spock");
-let paper = document.getElementById("paper");
-console.log(rock, paper, scissors, lizard, spock,);
+/**the variables are being set here */
+let playerChoice = document.getElementsByClassName("buttonChoice").button;
 
 /**player choice */
-playerChoice.addEventListener("click", function () {
-    console.log(button.value);
-/**computer decides with this code */
-
-    let computerChoice= Math.random();
-    if (computerChoice < 0.2) {
-        computerChoice = ("rock").src = "assets/images/rock.png"
-    }else if(computerChoice < 0.3){
-        computerChoice = ("paper").src = "assets/images/paper.png"
-    }else if(computerChoice < 0.5){
-        computerChoice = ("scissors").src = "assets/images/scissors.png"
-    }else if(computerChoice < 0.7){
-        computerChoice = ("lizard").src = "assets/images/lizard.png"
-    } else if(computerChoice < 0.9){
-        computerChoice = ("spock").src = "assets/images/spock.png"
-    }
-console.log(computerChoice);
-/**player choice */
-playerChoice.addEventListener("click", function(){
-    console.log(button.value);
-})
-/**this will compare the rules */
-if(computerChoice === playerChoice){
-    document.getElementById()
-}else if {
-    
+function output () {
+let playerChoice = document.addEventListener("click",button);
+button.value
+console.log(playerChoice)
 }
+
+/**computer decides with this code */
+let computerChoice = Math.random();
+if (computerChoice < 0.2) {
+    computerChoice = ("rock").img = "assets/images/rock.png";
+} else if (computerChoice < 0.3) {
+    computerChoice = ("paper").img = "assets/images/paper.png";
+} else if (computerChoice < 0.5) {
+    computerChoice = ("scissors").img = "assets/images/scissors.png";
+} else if (computerChoice < 0.7) {
+    computerChoice = ("lizard").img = "assets/images/lizard.png";
+} else if (computerChoice < 0.9) {
+    computerChoice = ("spock").img = "assets/images/spock.png";
+} else {
+    computerChoice = "Computer Is Thinking";
+}
+console.log(computerChoice)

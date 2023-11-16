@@ -13,16 +13,16 @@
     <main>
         <div id="main-pictures">
             <img id="picture1" src="assets/images/rock paper lizard spock.png" alt="Rock Paper Scissors Lizard Spock">
-            <img id="computer" src="assets/images/rock paper lizard spock.png" alt="Rock Paper Scissors Lizard Spock">
+            <img id="comPuter" src="assets/images/rock paper lizard spock.png" alt="Rock Paper Scissors Lizard Spock">
         </div>
         <!--buttons to choose for player-->
         <div class="main-game"><h2>main content</h2></div>
         <div class="player-input">
-            <input class="buttonChoice" id="rock" name="rock" type="button" value="Rock">
-            <input class="buttonChoice" id="paper" name="paper" type="button" value="Paper">
-            <input class="buttonChoice" id="scissors" name="scissors" type="button" value="Scissors">
-            <input class="buttonChoice" id="lizard" name="lizard" type="button" value="Lizard">
-            <input class="buttonChoice" id="spock"  name="spock" type="button" value="Spock">
+            <button  class="buttonChoice" id="rock" name="rock" onclick="output(rock)">Rock</button>
+            <button class="buttonChoice" id="paper" name="paper" onclick="output(paper)">Paper</button>
+            <button class="buttonChoice" id="scissors" name="scissors" onclick="output(scissors)">Scissors</button>
+            <button class="buttonChoice" id="lizard" name="lizard" onclick="output(lizard)">Lizard</button>
+            <button class="buttonChoice" id="spock"  name="spock" onclick="output(spock)">Spock</button>
         </div>
         <p id="player"></p>
         <!--score board-->
