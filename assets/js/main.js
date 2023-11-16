@@ -1,11 +1,15 @@
 console.log("hi just checking if it works");
-let playerChoice = document.getElementsByTagName("input");
+let playerChoice = document.getElementsByClassName("buttonChoice").button ;
 let rock = document.getElementById("rock");
 let scissors = document.getElementById("scissors");
 let lizard = document.getElementById("lizard");
 let spock = document.getElementById("spock");
 let paper = document.getElementById("paper");
 console.log(rock, paper, scissors, lizard, spock,);
+
+/**player choice */
+playerChoice.addEventListener("click", function () {
+    console.log(button.value);
 /**computer decides with this code */
 
     let computerChoice= Math.random();
@@ -26,3 +30,8 @@ playerChoice.addEventListener("click", function(){
     console.log(button.value);
 })
 /**this will compare the rules */
+if(computerChoice === playerChoice){
+    document.getElementById()
+}else if {
+    
+}
