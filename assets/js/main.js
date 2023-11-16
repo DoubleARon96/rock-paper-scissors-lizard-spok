@@ -3,10 +3,11 @@ console.log("hi just checking if it works");
 let playerChoice = document.getElementsByClassName("buttonChoice").button;
 
 /**player choice */
-function output () {
-let playerChoice = document.addEventListener("click",button);
-button.value
-console.log(playerChoice)
+function output() {
+    document.addEventListener("click", playerChoice);
+    let x = document.getElementById("comPuter");
+    x.querySelector("comPuter").innerHTML = "computerChoice";
+    console.log(output);
 }
 
 /**computer decides with this code */
@@ -24,4 +25,9 @@ if (computerChoice < 0.2) {
 } else {
     computerChoice = "Computer Is Thinking";
 }
-console.log(computerChoice)
+console.log(computerChoice);
+let comPuter = document.getElementById("comPuter")
+comPuter.setAttribute("src", computerChoice);
+
+
+/**Rules */
