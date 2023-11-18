@@ -1,5 +1,6 @@
 *{
     text-align: center;
+    font-family: 'Agbalumo', sans-serif;
 }
 h1{
     text-align: center;
@@ -11,16 +12,22 @@ h1{
     border: 1px solid black;
 }
 .player-input{
-    display: static;
-    margin: 0%;
     width: 100%;
     display: inline-block;
     width: 80%;
     border: 1px solid black;
 }
-#main-pictures ,#picture1, #comPuter{
+.player-input>button{
     display: inline;
-    width: 40%;
+    width: 30%;
+}
+button:hover{
+    background-color: red;
+}
+#main-pictures ,#picture1, #comPuter{
+    margin: 0%;
+    display: inline;
+    width: 45%;
     background-color: black;
     border-radius: 360px;
 }

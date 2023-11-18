@@ -21,6 +21,13 @@ let game = () => {
                 let movesLeft = document.querySelector('.movesleft');
                 moves++;
                 movesLeft.innerHTML = 'Moves Left :${10-moves}';
+
+                /**function to see who wins */
+                winner(this.innerText.computerChoice)
+                /**the game over count  */
+                if(moves === 10){
+                    gameOver(playerOptions.movesLeft)
+                }
             }
         )}
     )}
@@ -54,9 +61,9 @@ function changeImageBackground(option) {
         break;
         case 'scissors': imgUrl = 'assets/images/scissors.png'
         break;
-        case 'lizard': imgUrl = 'assets/images/scissors.png';
+        case 'lizard': imgUrl = 'assets/images/lizard.png';
             break;
-        case 'spock': imgUrl = 'assets/images/scissors.png';
+        case 'spock': imgUrl = 'assets/images/spock.png';
             break;
             default: alert(console.error("somthing is wrong "))
         };
