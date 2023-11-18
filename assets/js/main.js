@@ -22,10 +22,26 @@ let comPuter = document.getElementById("comPuter")
 comPuter.setAttribute("src", computerChoice);
 
 /**player choice */
-function output(image) {
-    // This function displays the image source on the result div
-    document.getElementById("result").style.background = `url(${image}) no-repeat center`;
-    document.getElementById("result").style.backgroundSize = "cover";}
+function changeImageBackground(option) {
+    let imgUrl = "assets/images/rock-paper-lizard-spock.png";
+    switch(option){
+        case 'rock': imgUrl = 'assets/images/rock.png';
+        break;
+        case 'paper': imgUrl = 'assets/images/paper.png'
+        break;
+        case 'scissors': imgUrl = 'assets/images/scissors.png'
+        break;
+        case 'lizard': imgUrl = 'assets/images/scissors.png';
+            break;
+        case 'spock': imgUrl = 'assets/images/scissors.png';
+            break;
+            default: alert(console.error("somthing is wrong "))
+        };
+        let imageElement = document.getElementById("picture1");
+        imageElement.src= imgUrl;
+
+    }
+   
 
 
 /**Rules */

@@ -12,17 +12,17 @@
     <header><h1>Rock Paper Scissors Lizard Spock</h1></header>
     <main>
         <div id="main-pictures">
-            <img id="picture1" src="assets/images/rock paper lizard spock.png" alt="Rock Paper Scissors Lizard Spock">
-            <img id="comPuter" src="assets/images/rock paper lizard spock.png" alt="Rock Paper Scissors Lizard Spock">
+            <img id="picture1" src="assets/images/rock-paper-lizard-spock.png" alt="Rock Paper Scissors Lizard Spock">
+            <img id="comPuter" src="assets/images/rock-paper-lizard-spock.png" alt="Rock Paper Scissors Lizard Spock">
         </div>
         <!--buttons to choose for player-->
         <div class="main-game"><h2>main content</h2></div>
         <div class="player-input">
-            <input type="submit"  class="buttonChoice" id="rock" value="Rock" src="assets/images/rock.png"  onclick="output(rock)">
-            <input type="submit" class="buttonChoice" id="paper" value="Paper" src="assets/images/paper.png"  onclick="output('assets/images/paper.png')">
-            <input type="submit" class="buttonChoice" id="scissors" value="Scissors" src="assets/images/scissors.png" onclick="output('assets/images/scissors.png')">
-            <input type ="submit" class="buttonChoice" id="lizard" value="Lizard" src="assets/images/lizard.png" onclick="output('assets/images/lizard.png')">
-            <input type="submit" class="buttonChoice" id="spock" value="Spock" src="assets/images/spock.png" onclick="output('assets/images/spock.png')">
+            <button class="buttonChoice" id="rock" value="Rock" src="assets/images/rock.png"  onclick="changeImageBackground('rock')">Rock</button>
+            <button class="buttonChoice" id="paper" value="Paper" src="assets/images/paper.png"  onclick="changeImageBackground('paper')">Paoer</button>
+            <button class="buttonChoice" id="scissors" value="Scissors" src="assets/images/scissors.png" onclick="changeImageBackground('scissors')">Scissors</button>
+            <button class="buttonChoice" id="lizard" value="Lizard" src="assets/images/lizard.png" onclick="changeImageBackground('lizard')">Lizard</button>
+            <button class="buttonChoice" id="spock" value="Spock" src="assets/images/spock.png" onclick="changeImageBackground('spock')">Spock</button>
         </div>
         <p id="player"></p>
         <!--score board-->
