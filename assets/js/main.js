@@ -71,11 +71,13 @@ function changeImageBackground(option) {
         imageElement.src= imgUrl;
 
     }
+
    
 
 
 /**Rules */
 let comPare ={
+
     "rock":{
         "rock" : "draw",
         "paper" : "lose",
@@ -111,5 +113,26 @@ let comPare ={
         "lizard": "lose",
         "spock": "draw"
     },
+};
+switch (`${playerChoice}${computerChoice}`) {
+    case "rockrock":
+    case "paperscissors":
+    case "scissorsscissors":
+    case "lizardlizard":
+    case "spockspock":
+        console.log("It's a tie!");
+    case "rockpaper":
+    case "paperspock":
+    case "scissorsrock":
+    case "lizardscissors":
+    case "spocklizard":
+        console.log("You lose!");
+        break;
+    case "rockscissors":
+    case "paperrock":
+    case "scissorspaper":
+    case "lizardpaper":
+    case "spockrock":
+        console.log("You win!");
 }
 /**win loose */
