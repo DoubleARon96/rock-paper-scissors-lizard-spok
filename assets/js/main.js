@@ -1,6 +1,5 @@
-console.log("hi just checking if it works");
-/**the variables are being set here */
-let playerChoice = document.getElementById("rock","paper","scissors","lizard","spock").value;
+console.log("hi just checking if it works"); 
+let playerChoice= document.getElementsByClassName ("buttonChoice")
 console.log(playerChoice)
 /**function for game  */
 let game = () => {
@@ -36,38 +35,44 @@ let game = () => {
 /**computer decides with this code */
 let computerChoice = Math.random()*5;
 if (computerChoice < 1) {
-    computerChoice = ("rock").img = "assets/images/rock.png";
+    computerChoice ={ name :"rock", img: "assets/images/rock.png"};
 } else if (computerChoice < 2) {
-    computerChoice = ("paper").img = "assets/images/paper.png";
+    computerChoice = {name :"paper", img: "assets/images/paper.png"};
 } else if (computerChoice < 3) {
-    computerChoice = ("scissors").img = "assets/images/scissors.png";
+    computerChoice = {name :"scissors", img: "assets/images/scissors.png"};
 } else if (computerChoice < 4) {
-    computerChoice = ("lizard").img = "assets/images/lizard.png";
+    computerChoice = {name : "lizard", img: "assets/images/lizard.png"};
 } else if (computerChoice < 5) {
-    computerChoice = ("spock").img = "assets/images/spock.png";
+    computerChoice = {name: "spock", img: "assets/images/spock.png"};
 } else {
     computerChoice = "Computer Is Thinking";
 }
-console.log(computerChoice);
+console.log(computerChoice.name);
 let comPuter = document.getElementById("comPuter")
-comPuter.setAttribute("src", computerChoice);
+comPuter.setAttribute("src", computerChoice.img);
 
 /**player choice */
 function changeImageBackground(option) {
     let imgUrl = "assets/images/rock-paper-lizard-spock.png";
     switch(option){
         case 'rock': imgUrl = 'assets/images/rock.png';
+        playerChoice= "rock"
         break;
         case 'paper': imgUrl = 'assets/images/paper.png'
+        playerChoice = "paper"
         break;
         case 'scissors': imgUrl = 'assets/images/scissors.png'
+        playerChoice = "scissors"
         break;
         case 'lizard': imgUrl = 'assets/images/lizard.png';
+        playerChoice = "lizard"
             break;
         case 'spock': imgUrl = 'assets/images/spock.png';
+        playerChoice = "spock"
             break;
             default: alert(console.error("somthing is wrong "))
         };
+        console.log(playerChoice)
         let imageElement = document.getElementById("picture1");
         imageElement.src= imgUrl;
 
@@ -112,7 +117,7 @@ let comPare ={
         "spock": "draw"
     },
 };
-switch (`${"playGame"}${"computerChoice"}`) {
+switch (`${playerChoice}${computerChoice.name}`) {
     case "rockrock":
     case "paperscissors":
     case "scissorsscissors":
