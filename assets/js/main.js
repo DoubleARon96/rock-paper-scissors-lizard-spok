@@ -33,6 +33,10 @@ let game = () => {
     )}
 }
 /**computer decides with this code */
+function buttonStart (){
+    buttonStart.addEventListener("click", button)
+    
+}
 let computerChoice = Math.random()*5;
 if (computerChoice < 1) {
     computerChoice ={ name :"rock", img: "assets/images/rock.png"};
@@ -79,44 +83,6 @@ function changeImageBackground(option) {
     } 
  
 /**Rules */
-let comPare ={
-
-    "rock":{
-        "rock" : "draw",
-        "paper" : "lose",
-        "scissors" : "win",
-        "lizard" : "win",
-        "spock" : "lose"
-    },
-    "scissors" : {
-        "rock" : "lose",
-        "paper" : "win",
-        "scissors" : "draw",
-        "lizard": "win",
-        "spock": "lose"
-    },
-    "paper" : {
-        "rock": "win",
-        "paper": "draw",
-        "scissors": "lose",
-        "lizard": "lose",
-        "spock": "win"
-    },
-    "lizard": {
-        "rock": "lose",
-        "paper": "win",
-        "scissors": "lose",
-        "lizard": "draw",
-        "spock": "win"
-    },
-    "spock": {
-        "rock": "win",
-        "paper": "lose",
-        "scissors": "win",
-        "lizard": "lose",
-        "spock": "draw"
-    },
-};
 switch (`${playerChoice}${computerChoice.name}`) {
     case "rockrock":
     case "paperscissors":
@@ -129,7 +95,7 @@ switch (`${playerChoice}${computerChoice.name}`) {
     case "scissorsrock":
     case "lizardscissors":
     case "spocklizard":
-        ++computerScore
+        computerScore ++
         console.log("You lose!");
         break;
     case "rockscissors":
@@ -137,7 +103,7 @@ switch (`${playerChoice}${computerChoice.name}`) {
     case "scissorspaper":
     case "lizardpaper":
     case "spockrock":
-        ++playerScore
+        playerScore ++
         console.log("You win!");
 }
 /**win loose */

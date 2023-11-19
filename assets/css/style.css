@@ -28,6 +28,7 @@ button:hover{
     margin: 0%;
     display: inline;
     width: 45%;
+    height: 50%;
     background-color: black;
     border-radius: 360px;
 }
@@ -36,15 +37,15 @@ button:hover{
     width: 100%;
 }
 .rules{
+    padding: 5px;
     list-style-type:none;
-    display:flex;
-    justify-content: space-between;
+    display:static;
     column-count: 2;
     text-transform: capitalize;
 }
-.rules>li{
-    width: 80%;
+li{
     padding: 10px;
     border-radius: 80px;
     border: 1px solid black;
+    text-align: center;
 }
