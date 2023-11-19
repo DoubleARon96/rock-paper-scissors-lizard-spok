@@ -1,6 +1,7 @@
 console.log("hi just checking if it works");
 /**the variables are being set here */
-let playerChoice = document.getElementsByClassName("buttonChoice").button;
+let playerChoice = document.getElementById("rock","paper","scissors","lizard","spock").value;
+console.log(playerChoice)
 /**function for game  */
 let game = () => {
     let playerScore = 0;
@@ -70,11 +71,8 @@ function changeImageBackground(option) {
         let imageElement = document.getElementById("picture1");
         imageElement.src= imgUrl;
 
-    }
-
-   
-
-
+    } 
+ 
 /**Rules */
 let comPare ={
 
@@ -114,7 +112,7 @@ let comPare ={
         "spock": "draw"
     },
 };
-switch (`${playerChoice}${computerChoice}`) {
+switch (`${"playGame"}${"computerChoice"}`) {
     case "rockrock":
     case "paperscissors":
     case "scissorsscissors":
@@ -126,6 +124,7 @@ switch (`${playerChoice}${computerChoice}`) {
     case "scissorsrock":
     case "lizardscissors":
     case "spocklizard":
+        ++computerScore
         console.log("You lose!");
         break;
     case "rockscissors":
@@ -133,6 +132,7 @@ switch (`${playerChoice}${computerChoice}`) {
     case "scissorspaper":
     case "lizardpaper":
     case "spockrock":
+        ++playerScore
         console.log("You win!");
 }
 /**win loose */
