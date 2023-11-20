@@ -5,7 +5,7 @@ console.log(playerChoice);
 /**global variables*/
 let playerScore = 0;
 let computerScore = 0;
-let movesLeft = 0;
+let movesLeft = 10;
 let playerScoreElement = document.getElementById("playerScore");
 let computerScoreElement = document.getElementById("computerScore");
 let movesLeftElement = document.getElementById("movesLeft");
@@ -41,8 +41,14 @@ let game = () => {
     };
 };
 
-/**player choice */
+/**player choice switch statement
+*/
 function changeImageBackground(option) {
+    if(movesLeft === 0)
+    {
+        return
+    }
+
     let imgUrl = "assets/images/rock-paper-lizard-spock.png";
     switch (option) {
         case 'rock': imgUrl = 'assets/images/rock.png';
@@ -124,14 +130,12 @@ function changeImageBackground(option) {
             alert("You Win!");
             break;
     }
+    /** */
+    movesLeft--;
+    movesLeft.innerHTML = 'Moves Left :${10-moves}';
+    /**the inner Html element selectors*/
     playerScoreElement.innerHTML = playerScore;
     computerScoreElement.innerHTML = computerScore;
     movesLeftElement.innerHTML = movesLeft;
-
-
-
-
-
-
 }
 /**win loose */
