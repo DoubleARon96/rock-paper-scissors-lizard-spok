@@ -80,7 +80,7 @@ function changeImageBackground(option) {
     console.log(computerChoice.name);
     let comPuter = document.getElementById("comPuter");
     comPuter.setAttribute("src", computerChoice.img)
-    } 
+    
  
 /**Rules */
 switch (`${playerChoice}${computerChoice.name}`) {
@@ -90,6 +90,7 @@ switch (`${playerChoice}${computerChoice.name}`) {
     case "lizardlizard":
     case "spockspock":
         console.log("It's a tie!");
+        alert("You Tie!")
     case "rockpaper":
     case "paperspock":
     case "scissorsrock":
@@ -97,6 +98,7 @@ switch (`${playerChoice}${computerChoice.name}`) {
     case "spocklizard":
         computerScore ++
         console.log("You lose!");
+        alert("You Lose!")
         break;
     case "rockscissors":
     case "paperrock":
@@ -105,5 +107,6 @@ switch (`${playerChoice}${computerChoice.name}`) {
     case "spockrock":
         playerScore ++
         console.log("You win!");
-}
+        alert("You Win!")
+}}
 /**win loose */
