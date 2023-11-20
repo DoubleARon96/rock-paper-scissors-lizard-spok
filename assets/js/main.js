@@ -32,28 +32,7 @@ let game = () => {
         )}
     )}
 }
-/**computer decides with this code */
-function buttonStart (){
-    buttonStart.addEventListener("click", button)
-    
-}
-let computerChoice = Math.random()*5;
-if (computerChoice < 1) {
-    computerChoice ={ name :"rock", img: "assets/images/rock.png"};
-} else if (computerChoice < 2) {
-    computerChoice = {name :"paper", img: "assets/images/paper.png"};
-} else if (computerChoice < 3) {
-    computerChoice = {name :"scissors", img: "assets/images/scissors.png"};
-} else if (computerChoice < 4) {
-    computerChoice = {name : "lizard", img: "assets/images/lizard.png"};
-} else if (computerChoice < 5) {
-    computerChoice = {name: "spock", img: "assets/images/spock.png"};
-} else {
-    computerChoice = "Computer Is Thinking";
-}
-console.log(computerChoice.name);
-let comPuter = document.getElementById("comPuter")
-comPuter.setAttribute("src", computerChoice.img);
+;
 
 /**player choice */
 function changeImageBackground(option) {
@@ -79,7 +58,28 @@ function changeImageBackground(option) {
         console.log(playerChoice)
         let imageElement = document.getElementById("picture1");
         imageElement.src= imgUrl;
+    /**computer decides with this code */
+    function buttonStart() {
+        buttonStart.addEventListener("click", button);
 
+    }
+    let computerChoice = Math.random() * 5;
+    if (computerChoice < 1) {
+        computerChoice = { name: "rock", img: "assets/images/rock.png" };
+    } else if (computerChoice < 2) {
+        computerChoice = { name: "paper", img: "assets/images/paper.png" };
+    } else if (computerChoice < 3) {
+        computerChoice = { name: "scissors", img: "assets/images/scissors.png" };
+    } else if (computerChoice < 4) {
+        computerChoice = { name: "lizard", img: "assets/images/lizard.png" };
+    } else if (computerChoice < 5) {
+        computerChoice = { name: "spock", img: "assets/images/spock.png" };
+    } else {
+        computerChoice = "Computer Is Thinking";
+    }
+    console.log(computerChoice.name);
+    let comPuter = document.getElementById("comPuter");
+    comPuter.setAttribute("src", computerChoice.img)
     } 
  
 /**Rules */
