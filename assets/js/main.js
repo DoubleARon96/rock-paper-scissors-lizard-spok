@@ -1,12 +1,15 @@
 console.log("hi just checking if it works"); 
 let playerChoice= document.getElementsByClassName ("buttonChoice")
 console.log(playerChoice)
-/**function for game  */
-let game = () => {
-    let playerScore = 0;
-    let computerScore = 0;
-    let moves = 0;
 
+/**global variables*/
+let playerScore = 0;
+let computerScore = 0;
+let moves = 0;
+/**end of global variables*/
+
+/**function for game*/
+let game = () => {
     let playGame = () => {
         let rock = document.querySelector('#rock');
         let paper = document.querySelector('#paper');
@@ -59,10 +62,6 @@ function changeImageBackground(option) {
         let imageElement = document.getElementById("picture1");
         imageElement.src= imgUrl;
     /**computer decides with this code */
-    function d () {
-        buttonStart.addEventListener("click", button);
-
-    }
     let computerChoice = Math.random() * 5;
     if (computerChoice < 1) {
         computerChoice = { name: "rock", img: "assets/images/rock.png" };
