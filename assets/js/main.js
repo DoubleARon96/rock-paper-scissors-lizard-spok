@@ -130,7 +130,7 @@ function changeImageBackground(option) {
             alert("You Win!");
             break;
     }
-    /** */
+    /**moves lefter count down */
     movesLeft--;
     movesLeft.innerHTML = 'Moves Left :${10-moves}';
     /**the inner Html element selectors*/
@@ -138,4 +138,3 @@ function changeImageBackground(option) {
     computerScoreElement.innerHTML = computerScore;
     movesLeftElement.innerHTML = movesLeft;
 }
-/**win loose */
