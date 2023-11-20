@@ -83,30 +83,40 @@ function changeImageBackground(option) {
     
  
 /**Rules */
-switch (`${playerChoice}${computerChoice.name}`) {
-    case "rockrock":
-    case "paperscissors":
-    case "scissorsscissors":
-    case "lizardlizard":
-    case "spockspock":
+switch (`${playerChoice}:${computerChoice.name}`) {
+    case "rock:rock":
+    case "paper:paper":
+    case "scissors:scissors":
+    case "lizard:lizard":
+    case "spock:spock":
         console.log("It's a tie!");
         alert("You Tie!")
-    case "rockpaper":
-    case "paperspock":
-    case "scissorsrock":
-    case "lizardscissors":
-    case "spocklizard":
+        break;
+    case "scissors:rock":
+    case "lizard:rock":
+    case "spock:paper":
+    case "rock:paper":
+    case "paper:scissors":
+    case "lizard:scissors":
+    case "spock:lizard":
+    case "paper:lizard":
+    case "scissors:spock":
         computerScore ++
         console.log("You lose!");
         alert("You Lose!")
         break;
-    case "rockscissors":
-    case "paperrock":
-    case "scissorspaper":
-    case "lizardpaper":
-    case "spockrock":
+    case "rock:scissors":
+    case "rock:lizard":
+    case "paper:spock":
+    case "paper:rock":
+    case "scissors:paper":
+    case "scissors:lizard":
+    case "lizard:spock":
+    case "lizard:paper":
+    case "spock:scissors":
         playerScore ++
         console.log("You win!");
         alert("You Win!")
+        break;
 }}
 /**win loose */
