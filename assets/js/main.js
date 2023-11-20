@@ -59,7 +59,7 @@ function changeImageBackground(option) {
         let imageElement = document.getElementById("picture1");
         imageElement.src= imgUrl;
     /**computer decides with this code */
-    function buttonStart() {
+    function d () {
         buttonStart.addEventListener("click", button);
 
     }
@@ -75,7 +75,7 @@ function changeImageBackground(option) {
     } else if (computerChoice < 5) {
         computerChoice = { name: "spock", img: "assets/images/spock.png" };
     } else {
-        computerChoice = "Computer Is Thinking";
+        computerChoice = "Computer Is Thinking Try Again";
     }
     console.log(computerChoice.name);
     let comPuter = document.getElementById("comPuter");
@@ -101,6 +101,7 @@ switch (`${playerChoice}:${computerChoice.name}`) {
     case "spock:lizard":
     case "paper:lizard":
     case "scissors:spock":
+    case "rock:spock":
         computerScore ++
         console.log("You lose!");
         alert("You Lose!")
@@ -114,6 +115,7 @@ switch (`${playerChoice}:${computerChoice.name}`) {
     case "lizard:spock":
     case "lizard:paper":
     case "spock:scissors":
+    case "spock:rock":
         playerScore ++
         console.log("You win!");
         alert("You Win!")
