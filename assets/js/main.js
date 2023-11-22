@@ -43,7 +43,7 @@ let game = () => {
 
 /**player choice switch statement
 */
-function changeImageBackground(option) {
+function playerClick(option) {
     if(movesLeft === 0)
     {
         return
@@ -94,7 +94,9 @@ function changeImageBackground(option) {
     }
 
     /**Rules */
-    function rules(Choice1, Choice2){
+    function rules(){
+        playerClick=playerChoice;
+        comPuter=computerChoice;
     switch (`${playerChoice}:${computerChoice.name}`) {
         case "rock:rock":
         case "paper:paper":
@@ -141,4 +143,4 @@ function changeImageBackground(option) {
     computerScoreElement.innerHTML = computerScore;
     movesLeftElement.innerHTML = movesLeft;
 }
-return()
+rules(computerChoice,playerChoice);
