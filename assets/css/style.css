@@ -39,7 +39,7 @@ button:hover{
 .rules{
     padding: 5px;
     list-style-type:none;
-    display:static;
+    display:block;
     column-count: 2;
     text-transform: capitalize;
 }

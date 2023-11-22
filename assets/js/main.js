@@ -71,7 +71,9 @@ function changeImageBackground(option) {
     console.log(playerChoice);
     let imageElement = document.getElementById("picture1");
     imageElement.src = imgUrl;
+}
     /**computer decides with this code */
+    function comPuter(option){
     let computerChoice = Math.random() * 5;
     if (computerChoice < 1) {
         computerChoice = { name: "rock", img: "assets/images/rock.png" };
@@ -89,9 +91,10 @@ function changeImageBackground(option) {
     console.log(computerChoice.name);
     let comPuter = document.getElementById("comPuter");
     comPuter.setAttribute("src", computerChoice.img);
-
+    }
 
     /**Rules */
+    function rules(Choice1, Choice2){
     switch (`${playerChoice}:${computerChoice.name}`) {
         case "rock:rock":
         case "paper:paper":
@@ -138,3 +141,4 @@ function changeImageBackground(option) {
     computerScoreElement.innerHTML = computerScore;
     movesLeftElement.innerHTML = movesLeft;
 }
+return()
