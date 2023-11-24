@@ -3,6 +3,7 @@ let playerChoice = document.getElementsByClassName("buttonChoice");
 console.log(playerChoice);
 
 /**global variables*/
+let computerChoice = {};
 let playerScore = 0;
 let computerScore = 0;
 let movesLeft = 10;
@@ -12,77 +13,63 @@ let movesLeftElement = document.getElementById("movesLeft");
 /**end of global variables*/
 
 /**function for game*/
-let game = () => {
-    let playGame = () => {
-        let rock = document.querySelector('#rock');
-        let paper = document.querySelector('#paper');
-        let scissors = document.querySelector('#scissors');
-        let lizard = document.querySelector('#lizard');
-        let spock = document.querySelector('#spock');
-        let playerOptions = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
-        let computerOptions = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
-
-        playerOptions.forEach(option => {
-            option.addEventListener('click', function () {
-                let movesLeft = document.querySelector('.movesleft');
-                moves++;
-                movesLeft.innerHTML = 'Moves Left :${10-moves}';
-
-                /**function to see who wins */
-                winner(this.innerText.computerChoice);
-                /**the game over count  */
-                if (moves === 10) {
-                    gameOver(playerOptions.movesLeft);
-                }
-            }
-            );
-        }
-        );
-    };
-};
-
-/**player choice switch statement
-*/
-function playerClick(option) {
+function game(option) {
     if (movesLeft === 0) {
         return;
     }
+    console.log("player playerChoice");
+    this.playerClick(option);
+    console.log("computer Choice");
+    this.comPuter(option);
+    console.log("rules Choice");
+    this.rules(option);
+}
+/**player choice switch statement
+ */
+function playerClick(option) {
+
 
     let imgUrl = "assets/images/rock-paper-lizard-spock.png";
     switch (option) {
-        case 'rock': imgUrl = 'assets/images/rock.png';
+        case "rock":
+            imgUrl = "assets/images/rock.png";
             playerChoice = "rock";
             break;
-        case 'paper': imgUrl = 'assets/images/paper.png';
+        case "paper":
+            imgUrl = "assets/images/paper.png";
             playerChoice = "paper";
             break;
-        case 'scissors': imgUrl = 'assets/images/scissors.png';
+        case "scissors":
+            imgUrl = "assets/images/scissors.png";
             playerChoice = "scissors";
             break;
-        case 'lizard': imgUrl = 'assets/images/lizard.png';
+        case "lizard":
+            imgUrl = "assets/images/lizard.png";
             playerChoice = "lizard";
             break;
-        case 'spock': imgUrl = 'assets/images/spock.png';
+        case "spock":
+            imgUrl = "assets/images/spock.png";
             playerChoice = "spock";
             break;
-        default: alert(console.error("something is wrong "));
-    };
+        default:
+            alert(console.error("something is wrong "));
+    }
     console.log(playerChoice);
     let imageElement = document.getElementById("picture1");
     imageElement.src = imgUrl;
 }
 /**computer decides with this code */
 function comPuter(option) {
-    let computerChoice = Math.random() * 5;
-    if (computerChoice < 1) {
+    let randomNumber = Math.random() * 5;
+    if (randomNumber < 1) {
         computerChoice = { name: "rock", img: "assets/images/rock.png" };
-    } else if (computerChoice < 2) {
+    } else if (randomNumber < 2) {
         computerChoice = { name: "paper", img: "assets/images/paper.png" };
-    } else if (computerChoice < 3) {
+    } else if (randomNumber < 3) {
         computerChoice = { name: "scissors", img: "assets/images/scissors.png" };
-    } else if (computerChoice < 4) {
+    } else if (randomNumber < 4) {
         computerChoice = { name: "lizard", img: "assets/images/lizard.png" };
-    } else if (computerChoice < 5) {
+    } else if (randomNumber < 5) {
         computerChoice = { name: "spock", img: "assets/images/spock.png" };
     } else {
         computerChoice = "Computer Is Thinking Try Again";
@@ -94,7 +81,7 @@ function comPuter(option) {
 
 /**Rules */
 function rules(option) {
-    switch (`${playerChoice}:${computerChoice}`) {
+    switch (`${playerChoice}:${computerChoice.name}`) {
         case "rock:rock":
         case "paper:paper":
         case "scissors:scissors":
@@ -135,11 +122,9 @@ function rules(option) {
 
     /**moves lefter count down */
     movesLeft--;
-    movesLeft.innerHTML = 'Moves Left :${10-moves}';
+    movesLeft.innerHTML = "Moves Left :${10-moves}";
     /**the inner Html element selectors*/
     playerScoreElement.innerHTML = playerScore;
     computerScoreElement.innerHTML = computerScore;
     movesLeftElement.innerHTML = movesLeft;
 }
-
-rules(playerChoice);

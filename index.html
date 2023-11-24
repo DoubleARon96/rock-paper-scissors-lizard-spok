@@ -1,64 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href = "assets/css/style.css">
-    <script src="https://kit.fontawesome.com/3ec10b2c97.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Agbalumo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/3ec10b2c97.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Agbalumo"
+    />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header><h1>Rock Paper Scissors Lizard Spock</h1></header>
     <main>
-        <div id="main-pictures">
-            <img id="picture1" src="assets/images/rock-paper-lizard-spock.png" alt="Rock Paper Scissors Lizard Spock">
-            <img id="comPuter" src="assets/images/rock-paper-lizard-spock.png" alt="Rock Paper Scissors Lizard Spock">
-        </div>
-        <!--buttons to choose for player-->
-        <div class="main-game"><h2>Choose Your Weapon</h2></div>
-        <div class="player-input">
-            <button class="buttonChoice" id="rock" value="Rock" 
-             onclick="playerClick('rock');comPuter()">Rock</button>
-            <button class="buttonChoice" id="paper" value="Paper"
-             onclick="playerClick('paper');comPuter()">Paper</button>
-            <button class="buttonChoice" id="scissors" value="Scissors"
-             onclick="playerClick('scissors');comPuter()">Scissors</button>
-            <button class="buttonChoice" id="lizard" value="Lizard" 
-            onclick="playerClick('lizard');comPuter()">Lizard</button>
-            <button class="buttonChoice" id="spock" value="Spock"
-            onclick="playerClick('spock');comPuter()">Spock</button>
-        </div>
-        <p id="player"></p>
-        <!--score board-->
-        <div class="result">
-            <h4>Player Wins</h4>
-            <h4 id="playerScore">0</h4>
-            <h4>Player Losses</h4>
-            <h4 id="computerScore">0</h4>
-            <h4>Moves Left</h4>
-            <h4 id="movesLeft">10</h4>
-        </div>
-        <div>
-            <input type="reset" value="Reset">
-        </div>
+      <div id="main-pictures">
+        <img
+          id="picture1"
+          src="assets/images/rock-paper-lizard-spock.png"
+          alt="Rock Paper Scissors Lizard Spock"
+        />
+        <img
+          id="comPuter"
+          src="assets/images/rock-paper-lizard-spock.png"
+          alt="Rock Paper Scissors Lizard Spock"
+        />
+      </div>
+      <!--buttons to choose for player-->
+      <div class="main-game"><h2>Choose Your Weapon</h2></div>
+      <div class="player-input">
+        <button
+          class="buttonChoice"
+          id="rock"
+          value="Rock"
+          onclick="game('rock')"
+        >
+          Rock
+        </button>
+        <button
+          class="buttonChoice"
+          id="paper"
+          value="Paper"
+          onclick="game('paper')"
+        >
+          Paper
+        </button>
+        <button
+          class="buttonChoice"
+          id="scissors"
+          value="Scissors"
+          onclick="game('scissors')"
+        >
+          Scissors
+        </button>
+        <button
+          class="buttonChoice"
+          id="lizard"
+          value="Lizard"
+          onclick="game('lizard')"
+        >
+          Lizard
+        </button>
+        <button
+          class="buttonChoice"
+          id="spock"
+          value="Spock"
+          onclick="game('spock')"
+        >
+          Spock
+        </button>
+      </div>
+      <p id="player"></p>
+      <!--score board-->
+      <div class="result">
+        <h4>Player Wins</h4>
+        <h4 id="playerScore">0</h4>
+        <h4>Player Losses</h4>
+        <h4 id="computerScore">0</h4>
+        <h4>Moves Left</h4>
+        <h4 id="movesLeft">10</h4>
+      </div>
+      <div>
+        <input type="reset" value="Reset" />
+      </div>
     </main>
     <!--rules -->
-    <footer><h3>Rules</h3>
-            <ul class="rules">
-               <li class="rules">Scissors<br>cuts<br>paper</li> 
-                <li class="rules">Paper<br>covers<br>rock</li>
-                <li class="rules">Rock<br>crushes<br>lizard</li>
-                <li class="rules">Lizard<br>poisons<br>Spock</li>
-                <li class="rules">Spock<br>smashes<br>scissors</li>
-                <li class="rules">Scissors<br>decapitate<br>lizard</li>
-                <li class="rules">Lizard<br>eats<br>paper</li>
-                <li class="rules">Paper<br>disproves<br>Spock</li>
-                <li class="rules">Spock<br>vaporizes<br>rock</li>
-                <li class="rules">Rock<br>crushes<br>scissors</li>
-            </ul>
+    <footer>
+      <h3>Rules</h3>
+      <ul class="rules">
+        <li class="rules">Scissors<br />cuts<br />paper</li>
+        <li class="rules">Paper<br />covers<br />rock</li>
+        <li class="rules">Rock<br />crushes<br />lizard</li>
+        <li class="rules">Lizard<br />poisons<br />Spock</li>
+        <li class="rules">Spock<br />smashes<br />scissors</li>
+        <li class="rules">Scissors<br />decapitate<br />lizard</li>
+        <li class="rules">Lizard<br />eats<br />paper</li>
+        <li class="rules">Paper<br />disproves<br />Spock</li>
+        <li class="rules">Spock<br />vaporizes<br />rock</li>
+        <li class="rules">Rock<br />crushes<br />scissors</li>
+      </ul>
     </footer>
     <script src="assets/js/main.js"></script>
-</body>
+  </body>
 </html>
