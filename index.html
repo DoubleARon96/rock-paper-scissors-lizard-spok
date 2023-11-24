@@ -19,15 +19,15 @@
         <!--buttons to choose for player-->
         <div class="main-game"><h2>Choose Your Weapon</h2></div>
         <div class="player-input">
-            <button class="buttonChoice" id="rock" value="Rock" src="assets/images/rock.png"
+            <button class="buttonChoice" id="rock" value="Rock" 
              onclick="playerClick('rock');comPuter()">Rock</button>
-            <button class="buttonChoice" id="paper" value="Paper" src="assets/images/paper.png"
+            <button class="buttonChoice" id="paper" value="Paper"
              onclick="playerClick('paper');comPuter()">Paper</button>
-            <button class="buttonChoice" id="scissors" value="Scissors" src="assets/images/scissors.png"
+            <button class="buttonChoice" id="scissors" value="Scissors"
              onclick="playerClick('scissors');comPuter()">Scissors</button>
-            <button class="buttonChoice" id="lizard" value="Lizard" src="assets/images/lizard.png" 
+            <button class="buttonChoice" id="lizard" value="Lizard" 
             onclick="playerClick('lizard');comPuter()">Lizard</button>
-            <button class="buttonChoice" id="spock" value="Spock" src="assets/images/spock.png" 
+            <button class="buttonChoice" id="spock" value="Spock"
             onclick="playerClick('spock');comPuter()">Spock</button>
         </div>
         <p id="player"></p>
@@ -41,12 +41,11 @@
             <h4 id="movesLeft">10</h4>
         </div>
         <div>
-            <input type=submit>
+            <input type="reset" value="Reset">
         </div>
     </main>
     <!--rules -->
     <footer><h3>Rules</h3>
-        <p>
             <ul class="rules">
                <li class="rules">Scissors<br>cuts<br>paper</li> 
                 <li class="rules">Paper<br>covers<br>rock</li>
@@ -59,7 +58,6 @@
                 <li class="rules">Spock<br>vaporizes<br>rock</li>
                 <li class="rules">Rock<br>crushes<br>scissors</li>
             </ul>
-        </p>
     </footer>
     <script src="assets/js/main.js"></script>
 </body>

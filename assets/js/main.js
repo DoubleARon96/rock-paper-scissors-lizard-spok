@@ -44,9 +44,8 @@ let game = () => {
 /**player choice switch statement
 */
 function playerClick(option) {
-    if(movesLeft === 0)
-    {
-        return
+    if (movesLeft === 0) {
+        return;
     }
 
     let imgUrl = "assets/images/rock-paper-lizard-spock.png";
@@ -72,8 +71,8 @@ function playerClick(option) {
     let imageElement = document.getElementById("picture1");
     imageElement.src = imgUrl;
 }
-    /**computer decides with this code */
-    function comPuter(option){
+/**computer decides with this code */
+function comPuter(option) {
     let computerChoice = Math.random() * 5;
     if (computerChoice < 1) {
         computerChoice = { name: "rock", img: "assets/images/rock.png" };
@@ -91,13 +90,11 @@ function playerClick(option) {
     console.log(computerChoice.name);
     let comPuter = document.getElementById("comPuter");
     comPuter.setAttribute("src", computerChoice.img);
-    }
+}
 
-    /**Rules */
-    function rules(){
-        playerClick=playerChoice;
-        comPuter=computerChoice;
-    switch (`${playerChoice}:${computerChoice.name}`) {
+/**Rules */
+function rules(option) {
+    switch (`${playerChoice}:${computerChoice}`) {
         case "rock:rock":
         case "paper:paper":
         case "scissors:scissors":
@@ -135,6 +132,7 @@ function playerClick(option) {
             alert("You Win!");
             break;
     }
+
     /**moves lefter count down */
     movesLeft--;
     movesLeft.innerHTML = 'Moves Left :${10-moves}';
@@ -143,4 +141,5 @@ function playerClick(option) {
     computerScoreElement.innerHTML = computerScore;
     movesLeftElement.innerHTML = movesLeft;
 }
-rules(computerChoice,playerChoice);
+
+rules(playerChoice);
