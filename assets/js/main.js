@@ -1,5 +1,3 @@
-let playerChoice = document.getElementsByClassName("buttonChoice");
-
 /**global variables*/
 let computerChoice = {};
 let playerScore = 0;
@@ -15,11 +13,8 @@ function game(option) {
     if (movesLeft === 0) {
         return;
     }
-    console.log("player playerChoice");
     this.playerClick(option);
-    console.log("computer Choice");
     this.comPuter(option);
-    console.log("rules Choice");
     this.rules(option);
 }
 /**player choice switch statement
@@ -50,7 +45,6 @@ function playerClick(option) {
         default:
             alert(console.error("something is wrong "));
     }
-    console.log(playerChoice);
     let imageElement = document.getElementById("picture1");
     imageElement.src = imgUrl;
 }
@@ -70,7 +64,6 @@ function comPuter(option) {
     } else {
         computerChoice = "Computer Is Thinking Try Again";
     }
-    console.log(computerChoice.name);
     let comPuter = document.getElementById("comPuter");
     comPuter.setAttribute("src", computerChoice.img);
 }
@@ -83,7 +76,6 @@ function rules(option) {
         case "scissors:scissors":
         case "lizard:lizard":
         case "spock:spock":
-            console.log("It's a tie!");
             alert("You Tie!");
             break;
         case "scissors:rock":
@@ -97,7 +89,6 @@ function rules(option) {
         case "scissors:spock":
         case "rock:spock":
             computerScore++;
-            console.log("You lose!");
             alert("You Lose!");
             break;
         case "rock:scissors":
@@ -111,7 +102,6 @@ function rules(option) {
         case "spock:scissors":
         case "spock:rock":
             playerScore++;
-            console.log("You win!");
             alert("You Win!");
             break;
     }
@@ -125,7 +115,6 @@ function rules(option) {
     movesLeftElement.innerHTML = movesLeft;
 }
 function resetEvent() {
-    console.log("hi");
     computerChoice = {};
     playerScore = 0;
     computerScore = 0;
