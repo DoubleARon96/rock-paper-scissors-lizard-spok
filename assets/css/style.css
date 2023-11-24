@@ -1,171 +1,174 @@
 * {
-  text-align: center;
-  font-family: "Agbalumo", sans-serif;
+    text-align: center;
+    font-family: "Agbalumo", sans-serif;
 }
 
 h1 {
-  text-align: center;
+    text-align: center;
 }
 
 #main-game {
-  margin: 0;
-  width: 100%;
-  height: 400px;
-  border: 1px solid black;
+    margin: 0;
+    width: 100%;
+    height: 400px;
+    border: 1px solid black;
 }
 
 .player-input {
-  width: 100%;
-  display: inline-block;
-  width: 80%;
-  border: 1px solid black;
+    width: 100%;
+    display: inline-block;
+    width: 80%;
+    border: 1px solid black;
 }
 
-.player-input > button {
-  display: inline;
-  width: 30%;
+.player-input>button {
+    display: inline;
+    width: 30%;
 }
 
 button:hover {
-  background-color: red;
+    background-color: red;
 }
 
 #main-pictures,
 #picture1,
 #comPuter {
-  margin: 0%;
-  display: inline;
-  width: 30%;
-  height: 50%;
-  background-color: black;
-  border-radius: 360px;
+    margin: 0%;
+    display: inline;
+    width: 30%;
+    height: 50%;
+    background-color: black;
+    border-radius: 360px;
 }
 
 #player-score,
 #player-wins,
 #player-losses {
-  display: inline;
-  width: 100%;
+    display: inline;
+    width: 100%;
 }
 
 .rules {
-  padding: 10px 17px;
-  list-style-type: none;
-  display: inline-flex;
-  column-count: 2;
-  text-transform: capitalize;
+    padding: 10px 17px;
+    list-style-type: none;
+    display: inline-flex;
+    column-count: 2;
+    text-transform: capitalize;
 }
 
 li {
-  padding: 10px;
-  border-radius: 80px;
-  border: 1px solid black;
-  text-align: center;
-  background-color: white;
-}
-
-html,
-body {
-  width: 100%;
-  height: 100%;
-}
-
-body {
-  background: linear-gradient(-45deg, #a73b1a, #f70909, #23a6d5, #1908b6);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  h1 {
-  }
-  .rules {
-    display: inline-table;
-    padding: 5px;
-    list-style-type: none;
-    column-count: 5;
-    text-transform: capitalize;
-  }
-
-  li {
-    font-size: small;
     padding: 10px;
     border-radius: 80px;
     border: 1px solid black;
     text-align: center;
     background-color: white;
-    display: none;
-  }
+}
 
-  .rules {
-    font-size: small;
-  }
-
-  html,
-  body {
+html,
+body {
     width: 100%;
     height: 100%;
-  }
+}
 
-  body {
-    background: linear-gradient(-45deg, #00cc66, #00ff55, #ff66ff, #b300b3);
+body {
+    background: linear-gradient(-45deg, #a73b1a, #f70909, #23a6d5, #1908b6);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-  }
+}
 
-  @keyframes gradient {
+@keyframes gradient {
     0% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
 
     50% {
-      background-position: 100% 50%;
+        background-position: 100% 50%;
     }
 
     100% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
-  }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        text-size-adjust: 80%;
+    }
+
+    .rules {
+        display: inline-table;
+        padding: 5px;
+        list-style-type: none;
+        column-count: 5;
+        text-transform: capitalize;
+    }
+
+    li {
+        font-size: small;
+        padding: 10px;
+        border-radius: 80px;
+        border: 1px solid black;
+        text-align: center;
+        background-color: white;
+        display: none;
+    }
+
+    .rules {
+        font-size: small;
+    }
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    body {
+        background: linear-gradient(-45deg, #00cc66, #00ff55, #ff66ff, #b300b3);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
 }
 
 @media screen and (max-width: 720px) {
-  html,
-  body {
-    width: 100%;
-    height: 100%;
-  }
 
-  body {
-    background: linear-gradient(-45deg, #002db3, #1a53ff, #ff6600, #993d00);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-  }
-
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
+    html,
+    body {
+        width: 100%;
+        height: 100%;
     }
 
-    50% {
-      background-position: 100% 50%;
+    body {
+        background: linear-gradient(-45deg, #002db3, #1a53ff, #ff6600, #993d00);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
     }
 
-    100% {
-      background-position: 0% 50%;
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
     }
-  }
 }

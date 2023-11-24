@@ -1,6 +1,4 @@
-console.log("hi just checking if it works");
 let playerChoice = document.getElementsByClassName("buttonChoice");
-console.log(playerChoice);
 
 /**global variables*/
 let computerChoice = {};
@@ -27,8 +25,6 @@ function game(option) {
 /**player choice switch statement
  */
 function playerClick(option) {
-
-
     let imgUrl = "assets/images/rock-paper-lizard-spock.png";
     switch (option) {
         case "rock":
@@ -127,4 +123,18 @@ function rules(option) {
     playerScoreElement.innerHTML = playerScore;
     computerScoreElement.innerHTML = computerScore;
     movesLeftElement.innerHTML = movesLeft;
+}
+function resetEvent() {
+    console.log("hi");
+    computerChoice = {};
+    playerScore = 0;
+    computerScore = 0;
+    movesLeft = 10;
+    let playerImage = "assets/images/rock-paper-lizard-spock.png";
+    let comPuterImageUrl = "assets/images/rock-paper-lizard-spock.png";
+    document.getElementById("picture1").src = playerImage;
+    document.getElementById("comPuter").src = comPuterImageUrl;
+    document.getElementById("movesLeft").innerHTML = movesLeft;
+    document.getElementById("computerScore").innerHTML = computerScore;
+    document.getElementById("playerScore").innerHTML = playerScore;
 }
