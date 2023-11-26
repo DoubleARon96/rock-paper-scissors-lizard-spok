@@ -1,4 +1,4 @@
-/**global variables*/
+//global variables
 let computerChoice = {};
 let playerScore = 0;
 let computerScore = 0;
@@ -6,9 +6,9 @@ let movesLeft = 10;
 let playerScoreElement = document.getElementById("playerScore");
 let computerScoreElement = document.getElementById("computerScore");
 let movesLeftElement = document.getElementById("movesLeft");
-/**end of global variables*/
+//end of global variables
 
-/**function for game*/
+//function for game
 function game(option) {
     if (movesLeft === 0) {
         return;
@@ -17,8 +17,7 @@ function game(option) {
     this.comPuter(option);
     this.rules(option);
 }
-/**player choice switch statement
- */
+//player choice switch statement
 function playerClick(option) {
     let imgUrl = "assets/images/rock-paper-lizard-spock.png";
     switch (option) {
@@ -48,7 +47,10 @@ function playerClick(option) {
     let imageElement = document.getElementById("picture1");
     imageElement.src = imgUrl;
 }
-/**computer decides with this code */
+/**computer decides with this code
+ * the variable set is the random number generator 
+ * and then 1 to 5 are set with rock, paper, scissors, lizard, spock 
+ */
 function comPuter(option) {
     let randomNumber = Math.random() * 5;
     if (randomNumber < 1) {
@@ -68,7 +70,10 @@ function comPuter(option) {
     comPuter.setAttribute("src", computerChoice.img);
 }
 
-/**Rules */
+/**Rules
+ * the switch statement compares the results
+ *  second part is the count down and scoring count
+ */
 function rules(option) {
     switch (`${playerChoice}:${computerChoice.name}`) {
         case "rock:rock":

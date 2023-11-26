@@ -2,7 +2,7 @@
 
 # Rock Paper Scissors Lizard Spock 
 
-[Visit the website here]()
+[Visit the website here](https://doublearon96.github.io/rock-paper-scissors-lizard-spok/)
 
 ![](docs/Images/screen-picture-of-all-sizes.png)
 
@@ -40,7 +40,7 @@ What the clients will be looking for:
 * Easy way to pass time.
 * Clear and high-quality Pictures.
 * the correct results.
-  
+* Easy to understand.
 the plan is to hit all of these targets and keep improving and adapting.
 
 the website is responsive to cover all bases because the age range we are aiming for the site covers both mobile to full-screen computers.
@@ -62,54 +62,47 @@ To help achieve our company goals the full deployment will have:
 
 * simply design so anyone can use it.
 * images clear and high quality.
-* 
-* sign up page to get in contact with the clients
-* downloadable catalog
-* links to social media forms
-* Newsletter sign-up form
+* simple java script functions and easy to update and improve.
+* HTML and CSS fully responsive.
+* Easy to access global variable.
 
 ### Surface
 
-the colour scheme I choose was to match the Samco company and keep with their colour scheme
+the colours and images are simple so its not over whelming 
 
-I also used Verdana font because it was nice and worked well with the site shape all the other fonts I tried just didn't feel right
+I also used Agbalumo font because it was nice and worked well with the site shape all the other fonts I tried just didn't feel right
 
-[](docs/Images/Screenshot-of-verdana-font.png)
 
 ### Features
 
-The web page is fully responsive and designed for mobile phones and then moved up through the screen sizes. the page is set out into sections to make it easier to read with a header nav bar, then main information, and then a footer.
+The web page is fully responsive and designed for mobile phones and then designed to moved up through the screen sizes to work fully with the background changing colour. the page is set out into sections to make it easier to read with a header, then main images and player choice, also and score counter and reset button then a footer with all the rules.
 
-### needs title
+### Heading Main Images
 
-![](docs/Images/navbar-picture.png)
+![](docs/images/Heading-and-main-image.png)
 
-the nav bar i have made it so it shrinks and grows with the screen size. it also has only three sections at the moment.
+The main images are nice and clear and they also change with player and computers choice.
 
-### needs title
+### Player Choices
 
-![](docs/Images/about-page-infomation.png)
+![](docs/images/player-choices.png)
 
-the main information moves with the screen size the bigger screens it moves to the middle to get rid of a big white space.
-on small screens, it makes the image float to the right and keeps in line with it.
+the player choices are the main function they activate everything, they also have a red background when clicked so the player knows there choice.
 
-### needs title
+the js is basically three function joined into one and that is the game function that is called, when the player makes their choice.
 
-![](docs/Images/gallery.png)
+### The Score And Reset button 
 
-the gallery also adjusts the screen size and adds columns depending on the screen size and keeps all the pictures from blurring or pixelating.
+![](docs/images/reset-scores.png)
 
-### needs title
+The score section has a bit of js to get the count down and the score to count correctly and the reset but is basically for this section and the main images so you get a nice fresh page. 
 
-![](docs/Images/form.png)
+### Rules
 
-the signup page is there for customers to sign up for news, it also sends info about vehicles, Cars bikes, and others so it can filter what they have I have also made it so they are not required to click any so they just get all information instead of specific information.
+![](docs/images/rules.png)
 
-### Submit Page
+The rules are a nice little way to know what move beats what and no other functions yet.
 
-[](docs/Images/submit-page.png)
-
-the submit page has a little thank you message and a home button but it also has the nav bar so it's down to the user what they press, in the future, I would like to add more content to this page.
 
 ### Technologies Used
 
@@ -135,22 +128,25 @@ the submit page has a little thank you message and a home button but it also has
   * Used to validate all HTML code written and used in this webpage.
 * [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input)
   * Used to validate all CSS code written and used in this webpage.
+* [JSHint Validation service](https://jshint.com/)
+  * Used to validate all Java Script code written and used in this webpage. 
+* [Spelling Checker]( https://open-vsx.org/extension/streetsidesoftware/code-spell-checker)
+  *  i used this to help write this and all my code too.
 
 ### Testing
 
 These are the tests I have done
 
-1. The first thing I did was test if the deployed link works
-2. I waited for the screen to load all good next I went through all the nave bars to see if they all worked and went through each one trying different paths for example on the gallery page you have the link to the homer and sign up so I tried both of them too.
-3. after checking the links I went back to the home page to check the footer links and I did the same with each page.
-4. when that was all good I checked that all pictures were loading and the CSS was working.
-5. now it was the signup form that made sure all the main stuff like first name, last name, and email are all required and the email one looks for @ symbol.
-6. next was the submit page I checked everything loaded and the home link worked
-7. the final step was checking all the links on that page worked.
+1. The first thing i tested was all the buttons.
+2. The second thing was i used console.logs to help check the java script and help debug if needed.
+3. Then after that i would play every hand and make sure the rules i set are giving the right result.
+4. the last was checking the console logs to make sure the code runs all the way through
 
 ##### Code Valadation
 
    with this I used W3 mark-up checker by copying each page and the CSS in and if there were any problems I fixed them and and ran it again.
+
+   I also used JS Hint as well to make sure my java script was all correct and works fine.
 
 ##### Grammarly
 
@@ -158,7 +154,7 @@ These are the tests I have done
 
 ##### Lighthouse check
 
-   ![](docs/Images/light-house-check.png)
+   ![](docs/images/rock-paper-lighthouse.png)
    this was the easiest one just open the Google Development tool and then click on more tools then lighthouse and the final part press the check button
 
 ### Deployment
@@ -201,25 +197,30 @@ these are the websites I used to help me beat some of the bugs I encountered.
 [flex box froggy](https://flexboxfroggy.com/)
 I used this to help understand how the flexbox works.
 [W3 learing](https://www.w3schools.com/css/css_positioning.asp)
-this was the main one for any issues
+this was the main one for any issues.
 [code instituet](https://learn.codeinstitute.net/ci_program/diplomainfullstacksoftwarecommoncurriculum)
 this was also the big one that helped me used bits from the Love Running project to help me understand
 my form and all the socials were the big ones.
 [W3 Validator](https://validator.w3.org/)
- for checking my work
+ for checking my work.
  [Favicon](https://favicon.io/favicon-generator/)
- for my favicon icon
+ for my favicon icon.
  [Am I Responsive](https://ui.dev/amiresponsive?url=https://doublearon96.github.io/Samcohoses/index.html)
 
  [Dasiy Gunn](https://github.com/daisygunn/la-petite-traveller/blob/master/README.md)
- I used Dasiy's Read me to help make my own one 
+ I used Dasiy's Read me to help make my own one.
+ [java Scrip Hints](https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/),(https://stackoverflow.com/questions/17976883/rock-paper-scissors-in-javascript)
+ i used these websites to help get my code working and if i missed anything out.
+ [CSS Background](https://www.sliderrevolution.com/resources/css-animated-background/)
+ this helped me design the background and get it working nicely.
 #### Direct people
 
-Ciaran merit my friend from school, Harry Dhillon my tutour support, Racebike bitz
+Ciaran merritt my friend from school, Harry Dhillon my tutour support
 
 
 ### Bugs
 
-I tried multiple times to make a checkbox drop-down but just couldn't get it to work so I made the three tabs look good in all screen sizes and make sure they fit all. in the future, i would research more on the dropdown and build a few to help in future projects
+[](docs/images/bug.png)
+one of the bugs i have is this violation it hasn't shown any effects on the game and it only shows in the console but if you wait a second of two before doing another it works fine.
 
 ## Thank You For Reading 
