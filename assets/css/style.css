@@ -145,6 +145,13 @@ body {
 }
 
 @media screen and (max-width: 720px) {
+    .rules {
+        display: inline-table;
+        padding: 5px;
+        list-style-type: none;
+        column-count: 5;
+        text-transform: capitalize;
+    }
 
     html,
     body {

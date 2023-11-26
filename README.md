@@ -8,22 +8,19 @@
 
 ## Welcome
 
-This website aims to show and promote a company that sells silicone hoses and works with
-famous racers in the motorsport world.
+This website is a mini game to help pass time while you wait also to shows you how random a computer can be.
 
-This Website has the following pages of content:
+This Website has the following content included:
 
-1. Home/About
-2. gallery
-3. Sign up page
-4. complete submit page
+1. images that change with choices
+2. rules at the bottom to understand why you won or lost the round
+3. a rest button so you can try beat your score
 
-The business goals set for this project are:
+The goals set for this project are:
 
-1. To expand Samco's presence online.
-2. get more people signed up for our newsletters.
-3. To increase sales of UK customers.
-4. also get more people to have a look at our social networking sites.
+1. To have a fully working mini game
+2. rules that the code understands and goes through to give results
+3. button interaction so the customer can interact with the game
 
 ---
 
@@ -31,18 +28,18 @@ The business goals set for this project are:
 
 While planning and taking in the principles of UX, planning how it will bring in the audience and future customers.
 
-Samco Website Target audience:
+Website Target audience:
 
-* ages between 18 to 40
-* Motor vehicle Enthusiast
-* people who have an interest in motorsports
-* Small companies looking to sell new products
+* ages between 18 to 40.
+* big bang theory fans.
+* people that have to wait for a little bit of time.
+* also for groups of friends.
   
 What the clients will be looking for:
 
-* Easy way to get information about the products and company
-* Clear and high-quality Pictures of the products
-* where they can get in contact and get news on new products
+* Easy way to pass time.
+* Clear and high-quality Pictures.
+* the correct results.
   
 the plan is to hit all of these targets and keep improving and adapting.
 
@@ -50,19 +47,22 @@ the website is responsive to cover all bases because the age range we are aiming
 
 ### Structure
 
-the website is a three-page website with a nav bar to get around with ease. the first page covers the information with a picture to show a hose in use. All pages have all socials at the bottom of each page in the footer for ease of access.
+the website is a basic rock paper scissors lizard spock with two images that change to the image you have chosen. under that you have the player choices these are buttons that go red after selecting your choice,
+after that there is player wins, losses and moves left, the numbers will increase for the for the player wins and losses but the moves left will decrees instead.
 
-the second page has a big gallery to show all different types of hoses, this also will have a few pictures with just the products so the clients can see what they will receive in the post.
+the reset button will reset everything on the screen so the images will go to the default and all the wins losses and moves left will go back to their default number.
 
-the third page will have a sign-up form so they can receive new and product information and when you fill out the form fully the first name last name and email will be required and the three check boxes under will be up to the client.
+the last element is the rules are responsive and fit with the page they have what wins and says why to, it changes from inline-flex to inline-table. an addition i am planning on making the rule that the game out come will change colour so its easier than.
+
+the background has different background colours dependent on the screen size for a extra change 
 
 ### Scope
 
 To help achieve our company goals the full deployment will have:
 
-* Header and menu bar, to navigate all sections
-* Information on the company and the products produced
-* Videos of the production
+* simply design so anyone can use it.
+* images clear and high quality.
+* 
 * sign up page to get in contact with the clients
 * downloadable catalog
 * links to social media forms
